@@ -10,6 +10,10 @@ module.exports = {
         '1px': '1px',
         '2px': '2px'
       },
+      width: {
+        '1px': '1px',
+        '2px': '2px'
+      },
       borderRadius: {
         '25': '25%',
         '50': '50%',

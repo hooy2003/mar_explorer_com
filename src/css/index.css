@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title-flag {
+  @apply relative before:content-[''] before:absolute before:w-2 before:-left-4 before:h-full before:top-0 before:bottom-0 before:m-auto before:bg-white;
+}
+.text-flag {
+  @apply relative before:content-[''] before:absolute before:w-8 before:-left-12 before:h-2px before:top-0 before:bottom-0 before:m-auto before:bg-white after:content-[''] after:absolute after:w-8 after:-right-12 after:h-2px after:top-0 after:bottom-0 after:m-auto after:bg-white;
+}
+.text-flag-d-bule {
+  @apply relative before:content-[''] before:absolute before:w-8 before:-left-12 before:h-2px before:top-0 before:bottom-0 before:m-auto before:bg-explorer-d-bule after:content-[''] after:absolute after:w-8 after:-right-12 after:h-2px after:top-0 after:bottom-0 after:m-auto after:bg-explorer-d-bule;
+}
+.r-button {
+  @apply bg-white rounded-full h-[70px] min-w-[280px] text-3xl font-bold text-explorer-bule
+}

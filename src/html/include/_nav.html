@@ -1,21 +1,49 @@
-<nav class="h-[70px] bg-explorer-bule flex">
-    <div class="flex-1 relative">
-        <img class="w-[204px] inline-block absolute top-0 bottom-0 left-4 m-auto"
-        src="./img/logo_white.png" alt="Mar Explorer">
+<nav>
+    <div class="xl:hidden xl:h-[50px] h-[70px] bg-explorer-bule flex">
+        <div class="relative" style="flex:1 1 35%;">
+            <img class="xl:w-[137px] w-[204px] inline-block absolute top-0 bottom-0 left-4 m-auto"
+            src="./img/logo_white.png" alt="Mar Explorer">
+        </div>
+        <div class="flex justify-end items-center" style="flex:1 1 65%;">
+            <ul class="flex items-center __text__lg text-white">
+                <li class="px-4">
+                    <a href="./index.html">首頁</a>
+                </li>
+                <li class="px-4">
+                    <a href="./about.html">關於MarExplorer</a>
+                </li>
+                <li class="px-4">
+                    <a href="./formate.html">廣告格式</a>
+                </li>
+                <li class="px-4">
+                    <butto class="r-button-small flex items-center justify-center">聯絡我們</button>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="flex-1 flex justify-end items-center">
-        <ul class="flex items-center text-lg text-white">
-            <li class="px-4">
+    <div class="__mobile__header md:block hidden bg-explorer-bule">
+        <div class="__menu__logo inline-block h-[50px]">
+            <img class="xl:w-[137px] w-[204px] inline-block absolute top-[11px] left-3 m-auto"
+            src="./img/logo_white.png" alt="Mar Explorer">
+        </div>
+        <div class="__burger__container">
+            <div id="__burger">
+                <div class="__bar __top__bar"></div>
+                <div class="__bar __bottom__bar"></div>
+            </div>
+        </div>
+        <ul class="__mobile__menu">
+            <li class="__menu__item">
                 <a href="./index.html">首頁</a>
             </li>
-            <li class="px-4">
+            <li class="__menu__item">
                 <a href="./about.html">關於MarExplorer</a>
             </li>
-            <li class="px-4">
+            <li class="__menu__item">
                 <a href="./formate.html">廣告格式</a>
             </li>
-            <li class="px-4">
-                <butto class="r-button-small flex items-center justify-center">聯絡我們</button>
+            <li class="__menu__item">
+                <a href="./formate.html">聯絡我們</a>
             </li>
         </ul>
     </div>

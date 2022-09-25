@@ -29,6 +29,12 @@ module.exports = {
         'explorer-white': '#145D9F',
         'explorer-light-white': '#F6F6F6'
       },
+      colors: {
+        'explorer-bule': '#145D9F',
+        'explorer-d-bule': '#1628D1',
+        'explorer-white': '#145D9F',
+        'explorer-light-white': '#F6F6F6'
+      },
       backgroundColor:  {
         'explorer-bule': '#145D9F',
         'explorer-d-bule': '#1628D1',

@@ -7,51 +7,58 @@ body {
 }
 
 .title-flag {
-  @apply relative before:content-[''] before:absolute before:w-2 before:-left-8 before:h-full before:top-0 before:bottom-0 before:m-auto before:bg-white;
+  @apply relative before:content-[''] before:absolute xl:before:w-1 before:w-2 xl:before:-left-3 before:-left-8 before:h-full before:top-0 before:bottom-0 before:m-auto before:bg-white;
 }
-.text-flag {
-  @apply relative before:content-[''] before:absolute before:w-8 before:-left-12 before:h-2px before:top-0 before:bottom-0 before:m-auto before:bg-white after:content-[''] after:absolute after:w-8 after:-right-12 after:h-2px after:top-0 after:bottom-0 after:m-auto after:bg-white;
+.sub-flag {
+  @apply relative before:content-[''] before:absolute xl:before:w-4 before:w-8 xl:before:-left-6 before:-left-12 before:h-2px before:top-0 before:bottom-0 before:m-auto before:bg-white after:content-[''] after:absolute xl:after:w-4 after:w-8 xl:after:-right-6 after:-right-12 after:h-2px after:top-0 after:bottom-0 after:m-auto after:bg-white;
 }
-.text-flag-d-bule {
+.sub-flag-d-bule {
   @apply relative before:content-[''] before:absolute before:w-8 before:-left-12 before:h-2px before:top-0 before:bottom-0 before:m-auto before:bg-explorer-d-bule after:content-[''] after:absolute after:w-8 after:-right-12 after:h-2px after:top-0 after:bottom-0 after:m-auto after:bg-explorer-d-bule;
 }
 .address-flag {
   @apply relative sm:before:content-none before:content-[''] before:absolute before:w-2px before:-left-0 before:h-full before:top-0 before:bottom-0 before:m-auto before:bg-white;
 }
 .r-button {
-  @apply bg-white rounded-full md:h-[49px] md:w-[196px] h-[70px] w-[280px] md:text-xl text-3xl font-bold text-explorer-bule cursor-pointer
+  @apply bg-white rounded-full xl:h-[48px] xl:w-[150px] h-[70px] w-[280px] xl:text-xl text-3xl font-bold text-explorer-bule cursor-pointer
+}
+.r-button-fill {
+  @apply bg-explorer-bule rounded-full xl:h-[48px] xl:w-[150px] h-[70px] w-[280px] xl:text-xl text-3xl font-bold text-white cursor-pointer
+}
+.r-button-emp {
+  @apply bg-white rounded-full xl:h-[48px] xl:w-[150px] h-[70px] w-[280px] xl:text-xl text-3xl font-bold border-2 border-solid border-explorer-bule text-explorer-bule cursor-pointer
 }
 .r-button-small {
-  @apply bg-white rounded-full md:h-[35px] md:w-[112px] h-[43px] w-[140px] md:text-base text-lg font-bold text-explorer-bule cursor-pointer
+  @apply bg-white rounded-full xl:h-[35px] xl:w-[112px] h-[43px] w-[140px] xl:text-base text-lg font-bold text-explorer-bule cursor-pointer
+}
+.v-button {
+  @apply bg-white rounded-2xl xl:h-[40px] xl:w-[100px] h-[70px] w-[280px] xl:text-base text-3xl border-2 border-solid border-explorer-bule text-explorer-bule cursor-pointer
 }
 
 
 .__text__9xl {
   @apply text-9xl xl:text-7xl
 }
-.__text__7xl {
-  @apply text-7xl xl:text-4xl
-}
-.__text__5xl {
-  @apply text-5xl xl:text-4xl
-}
 .__text__4xl {
   @apply text-4xl xl:text-2xl
 }
-.__text__2xl {
-  @apply text-2xl xl:text-xl
+
+.__text__main__title {
+  @apply text-7xl xl:text-4xl
 }
-.__text__xl {
+.__text__sub__title {
+  @apply text-xl xl:text-base
+}
+.__text__base {
   @apply text-xl xl:text-lg
+}
+.__text__footer__title {
+  @apply text-xl
 }
 .__text__footer__p {
   @apply text-xl xl:text-sm
 }
-.__text__lg {
-  @apply text-lg xl:text-base
-}
 .__text__footer__copyright {
-  @apply text-xl xl:text-sm
+  @apply text-lg xl:text-xs
 }
 
 
@@ -60,14 +67,10 @@ body {
   perspective: 1000px;
   transform-style: preserve-3d;
   display: block;
-  width: 300px;
-  height: 200px;
   cursor: pointer;
 }
 .card {
   position: relative;
-  height: 100%;
-  width: 100%;
   transform-style: preserve-3d;
   transition: all 600ms;
   z-index: 20;
@@ -79,9 +82,12 @@ body {
   background: #FFF;
   text-align: center;
   backface-visibility: hidden;
-  border-radius: 2px;
+}
+.card .front {
+  box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 0.5);
 }
 .card .back {
+  box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 0.5);
   transform: rotateY(180deg);
 }
 .card_wrap:hover .card {

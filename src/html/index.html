@@ -1,18 +1,16 @@
 <!-- @@master  = ../layout/layout.html-->
 
 <!-- @@block  =  content-->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v15.0&appId=5481505851894697&autoLogAppEvents=1" nonce="cGdsctIm"></script>
 <section class="md:mt-[50px]">
   <div class="md:hidden block">
-    <div class="mask w-full h-0 pb-[47.35%] absolute z-20"></div>
-    <video class="w-full" autoplay muted loop poster="./img/banner_cover.jpg">
+    <div class="mask w-full h-0 pb-[56.25%] absolute z-20"></div>
+    <video id="autoplay_1" class="w-full" autoplay muted loop playsinline poster="./img/banner_cover.jpg">
       <source src="./img/mar_banner.mp4" type="video/mp4">
     </video>
   </div>
   <div class="md:block hidden">
-    <div class="mask w-full h-0 pb-[155.6%] absolute z-20"></div>
-    <video class="w-full" autoplay muted loop poster="./img/banner_cover__mobile.png">
+    <div class="mask w-full h-0 pb-[157.17%] absolute z-20"></div>
+    <video id="autoplay_2" class="w-full" autoplay muted loop playsinline poster="./img/banner_cover__mobile.png">
       <source src="./img/mar_banner__mobile.mp4" type="video/mp4">
     </video>
   </div>
@@ -32,27 +30,27 @@
     </div>
     <div class="xl:max-w-[90%] w-[950px] grid md:grid-cols-2 grid-cols-3 md:gap-4 gap-6 md:mb-10 mb-20 text-black">
       <div class="w-full pb-4 px-2 bg-explorer-light-white rounded-3xl text-center inline-block mb-5">
-        <img class="w-[90%] inline-block" src="./img/service_1.png" alt="程序化廣告投放">
+        <img class="w-[90%] md:p-3 p-6 inline-block" src="./img/service_1.png" alt="程序化廣告投放">
         <p class="__text__base">程序化廣告投放</p>
       </div>
       <div class="w-full pb-4 px-2 bg-explorer-light-white rounded-3xl text-center inline-block mb-5">
-        <img class="w-[90%] inline-block" src="./img/service_2.png" alt="ME PP PMP">
+        <img class="w-[90%] md:p-3 p-6 inline-block" src="./img/service_2.png" alt="ME PP PMP">
         <p class="__text__base">ME PP PMP</p>
       </div>
       <div class="w-full pb-4 px-2 bg-explorer-light-white rounded-3xl text-center inline-block mb-5">
-        <img class="w-[90%] inline-block" src="./img/service_3.png" alt="ME 創意影音聯播網">
+        <img class="w-[90%] md:p-3 p-6 inline-block" src="./img/service_3.png" alt="ME 創意影音聯播網">
         <p class="__text__base">ME 創意影音聯播網</p>
       </div>
       <div class="w-full pb-4 px-2 bg-explorer-light-white rounded-3xl text-center inline-block mb-5">
-        <img class="w-[90%] inline-block" src="./img/service_4.png" alt="數據驅動素材">
+        <img class="w-[90%] md:p-3 p-6 inline-block" src="./img/service_4.png" alt="數據驅動素材">
         <p class="__text__base">數據驅動素材</p>
       </div>
       <div class="w-full pb-4 px-2 bg-explorer-light-white rounded-3xl text-center inline-block mb-5">
-        <img class="w-[90%] inline-block" src="./img/service_5.png" alt="社群口碑與網路聲量運營">
+        <img class="w-[90%] md:p-3 p-6 inline-block" src="./img/service_5.png" alt="社群口碑與網路聲量運營">
         <p class="__text__base">社群口碑與網路聲量運營</p>
       </div>
       <div class="w-full pb-4 px-2 bg-explorer-light-white rounded-3xl text-center inline-block mb-5">
-        <img class="w-[90%] inline-block" src="./img/service_6.png" alt="網路新聞聯播網">
+        <img class="w-[90%] md:p-3 p-6 inline-block" src="./img/service_6.png" alt="網路新聞聯播網">
         <p class="__text__base">網路新聞聯播網</p>
       </div>
     </div>
@@ -101,20 +99,19 @@
         <div class="flex-100 text-center md:mb-2 mb-6">
           <p class="__text__sub__title inline-block sub-flag-d-bule">Client</p>
         </div>
-        <div class="flex-100 md:mb-5 mb-10">
+        <div class="flex-100 text-center md:mb-2 mb-6">
           <p class="__text__base inline-block">
             至今已協助上百個品牌進行數位媒體規劃、數位內容建置、創意素材製作...等
           </p>
         </div>
         <div class="text-center">
-          <span class="__text__9xl">99</span><sapn class="__text__5xl">%</sapn><br/>
-          <span class="__text__4xl font-bold tracking-widest">以上滿意度</span>
+          <img class="w-[46%] md:p-1 p-6 inline-block" src="./img/99percent.png" alt="99%以上滿意度">
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="py-10 flex flex-wrap justify-center"
+<!-- <section class="py-10 flex flex-wrap justify-center"
          style="background: linear-gradient(90deg, #1628D1 3%, #152DD2 18%, #133BD5 33%, #1053DB 48%, #0C75E4 67%, #079FEF 100%);"
 >
   <div class="xl:max-w-[90%] text-white">
@@ -128,10 +125,10 @@
       <p class="__text__base inline-block">看看我們的最新消息，歡迎追蹤、按讚開拓者行銷有限公司。</p>
     </div>
   </div>
-</section>
-<section class="text-center py-4">
+</section> -->
+<!-- <section class="text-center py-4">
   <div class="fb-page" data-href="https://www.facebook.com/MarExplorer" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/MarExplorer" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/MarExplorer">Mar-Explorer 開拓者行銷</a></blockquote></div>
-</section>
+</section> -->
 <section class="md:hidden bg-explorer-bule flex">
   <div class="flex-1 bg-s4-left bg-center bg-cover"></div>
   <div class="flex-1 py-20">

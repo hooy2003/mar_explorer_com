@@ -4,13 +4,13 @@
 <section class="md:mt-[50px]">
   <div class="md:hidden block">
     <div class="mask w-full h-0 pb-[47.35%] absolute z-20"></div>
-    <video class="w-full" autoplay muted loop poster="./img/about_banner_cover.jpg">
+    <video id="autoplay_1" class="w-full" autoplay muted loop playsinline poster="./img/about_banner_cover.jpg">
       <source src="./img/about_banner.mp4" type="video/mp4">
     </video>
   </div>
   <div class="md:block hidden">
     <div class="mask w-full h-0 pb-[155.6%] absolute z-20"></div>
-    <video class="w-full" autoplay muted loop poster="./img/about_banner_cover__mobile.png">
+    <video id="autoplay_2" class="w-full" autoplay muted loop playsinline poster="./img/about_banner_cover__mobile.png">
       <source src="./img/about_banner__mobile.mp4" type="video/mp4">
     </video>
   </div>
@@ -27,12 +27,16 @@
       <p class="__text__base inline-block">開拓者行銷由數名深耕於數位領域的資深廣告人協力合作，致力於媒體行銷、廣告投放、內容佈局、創意製作等領域。提供廣告主最適合並有效的行銷方式。
       </p>
     </div>
-    <div class="w-full inline-block mb-5">
+    <div class="w-full md:hidden inline-block mb-5">
       <img src="./img/about_content.png" alt="內容探勘 創意優化 數據驅動 數據驅動">
+    </div>
+    <div class="w-full md:inline-block hidden mb-5">
+      <img class="p-3 mb-6" src="./img/about_content_mobile_1.png" alt="內容探勘 創意優化">
+      <img class="p-3" src="./img/about_content_mobile_2.png" alt="數據驅動 數據驅動">
     </div>
   </article>
 </section>
-<section class="bg-explorer-bule flex justify-center flex-wrap xl:pt-8 pt-12 xl:pb-12 pb-24">
+<section class="bg-explorer-bule flex justify-center flex-wrap xl:pt-8 pt-12 xl:pb-12 pb-12">
   <article class="xl:max-w-[90%] max-w-[1000px] flex flex-wrap justify-center xl:mb-12 mb-24 text-white">
     <div class="flex-100 text-center xl:mb-2 mb-4">
       <h2 class="__text__main__title inline-block title-flag">主要服務項目</h2>
@@ -46,7 +50,7 @@
         <div class="card_wrap">
           <div class="card w-full pb-[98%]">
             <div class="front p-4 bg-explorer-light-white rounded-3xl text-center inline-block">
-              <img class="w-[90%] inline-block" src="./img/service_4.png" alt="程序化廣告投放">
+              <img class="w-[80%] p-3 inline-block" src="./img/service_4.png" alt="程序化廣告投放">
               <p class="__text__base">
                 內容行銷<br/>
                 Content Marketing
@@ -67,7 +71,7 @@
         <div class="card_wrap">
           <div class="card w-full pb-[98%]">
             <div class="front p-4 bg-explorer-light-white rounded-3xl text-center inline-block">
-              <img class="w-[90%] inline-block" src="./img/service_1.png" alt="程序化廣告投放">
+              <img class="w-[80%] p-3 inline-block" src="./img/service_1.png" alt="程序化廣告投放">
               <p class="__text__base">
                 廣告投放技術<br/>
                 AdTech Solution
@@ -86,7 +90,7 @@
         <div class="card_wrap">
           <div class="card w-full pb-[98%]">
             <div class="front p-4 bg-explorer-light-white rounded-3xl text-center inline-block">
-              <img class="w-[90%] inline-block" src="./img/service_7.png" alt="程序化廣告投放">
+              <img class="w-[80%] p-3 inline-block" src="./img/service_7.png" alt="程序化廣告投放">
               <p class="__text__base">
                 數位策略顧問<br/>
                 Digital Strategy Consulting

@@ -35,13 +35,6 @@ body {
 }
 
 
-.__text__9xl {
-  @apply text-9xl xl:text-7xl
-}
-.__text__4xl {
-  @apply text-4xl xl:text-2xl
-}
-
 .__text__main__title {
   @apply text-7xl xl:text-4xl
 }
@@ -149,7 +142,7 @@ body {
   list-style: none;
 }
 .__mobile__menu .__menu__item {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #FFF;
   margin-top: 5px;
   transform: scale(1.15) translateY(-30px);
   opacity: 0;
@@ -180,7 +173,7 @@ body {
 }
 .__mobile__header.__menu__opened {
   height: 100vh;
-  background-color: #000;
+  background-color: #145D9F;
   transition: all 0.3s ease-in, background 0.5s ease-in;
   transition-delay: 0.25s;
 }

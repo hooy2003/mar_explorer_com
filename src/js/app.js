@@ -50,6 +50,10 @@ if(youtubeEmbedElement) {
           if (e.data === YT.PlayerState.PLAYING) {
             document.getElementById("youtubeEmbed").classList.add("loaded");
           }
+          // codepen.io/objoe/pen/PoNyyNj
+          if (e.data === YT.PlayerState.ENDED) {
+            player.seekTo(0);
+          }
         }
       }
     });

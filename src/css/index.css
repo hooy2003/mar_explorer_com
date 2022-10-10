@@ -63,10 +63,10 @@ body {
   transition: 0.3s ease-out;
 }
 .hover-filled-1:hover {
-  @apply bg-explorer-bule border-2 border-solid border-white text-white
+  @apply bg-explorer-bule border-2 border-solid border-white text-white scale-95
 }
 .hover-filled-2:hover {
-  @apply bg-white border-2 border-solid border-explorer-bule text-explorer-bule
+  @apply bg-white border-2 border-solid border-explorer-bule text-explorer-bule scale-95
 }
 
 
